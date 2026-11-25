@@ -9,7 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lsh4867.github.io/">
   <meta property="og:title" content="Seunghwan Lee">
-  <meta property="og:description" content="Computer Vision · Large Language Models · Physics-Aware Generative Models">
+  <meta property="og:description" content="Computer Vision · Large Language Models · Diffusion &amp; Schrödinger Bridges">
   <title>Seunghwan Lee</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,7 +39,7 @@
         <div class="research-tags" aria-label="Research areas">
           <span>Computer Vision</span>
           <span>Large Language Models</span>
-          <span>Physics-Aware Generative Models</span>
+          <span>Diffusion &amp; Schr&ouml;dinger Bridges</span>
         </div>
 
         <div class="profile-links" aria-label="Profile links">
@@ -61,12 +61,12 @@
             I am a third-year undergraduate student in Electrical Engineering at
             <a href="https://www.kaist.ac.kr/en/" target="_blank" rel="noopener">KAIST</a>.
             In 2026 I have been working as an undergraduate researcher at the KAIST Graduate School of Medical Science and Engineering,
-            where I develop physics-aware deep learning that restores in vivo two-photon microscopy to expansion-microscopy resolution.
+            where I extended a physics-informed generator into a Schr&ouml;dinger bridge for unpaired super-resolution of in vivo two-photon microscopy.
           </p>
           <p>
             I am interested in computer vision and large language models, and in particular in generative models whose outputs stay
-            faithful to the evidence they are given. In microscopy this means constraining a generator with the optical forward model
-            so that it restores structure without hallucinating it. I am now looking for opportunities to study these questions in
+            faithful to the evidence they are given. In microscopy this means a model that sharpens what the optics actually recorded
+            without inventing structure that was never there. I am now looking for opportunities to study these questions in
             vision and language models more broadly.
           </p>
         </div>
@@ -91,15 +91,16 @@
 
         <article class="container2">
           <div class="item text2">
-            <papertitle>Physics-Aware Unsupervised Super-Resolution for In Vivo Two-Photon Microscopy</papertitle>
+            <papertitle>Schr&ouml;dinger-Bridge Super-Resolution for In Vivo Two-Photon Microscopy</papertitle>
             <br>
-            <span class="entry-org">Undergraduate Researcher, Graduate School of Medical Science and Engineering, KAIST</span>
+            <span class="entry-org">Undergraduate Research Intern, Ku Lab (Advisor: Prof. Taeyun Ku), Graduate School of Medical Science and Engineering, KAIST</span>
             <br>
             <em>Feb 2026 – Dec 2026</em>
             <ul class="entry-points">
-              <li>Designed a 3D CycleGAN with OTF-based frequency-domain losses that enforce consistency with the optical forward model and suppress hallucinated structure.</li>
-              <li>Built PSF-measured sim2real data synthesis to train without paired in vivo and expansion-microscopy volumes.</li>
-              <li>Extending the framework to neuronal mitochondria for 3D instance segmentation and morphological quantification.</li>
+              <li>Extended the lab's physics-informed one-step generator into an N-step Schr&ouml;dinger bridge that shares one time axis between two couplings: an I&sup2;SB analytic posterior on paired synthetic data and UNSB Markov simulation on unpaired real data.</li>
+              <li>Designed zero-initialized time conditioning (+7.3% parameters) that makes the bridge bit-identical to the pretrained generator at initialization, enabling warm-start; verified the reimplementation with 386 equivalence checks.</li>
+              <li>Reached a +37.6% FRC resolution gain over the input; showed that dim-structure loss comes from the multi-step sampler, not the learned weights, and that inference step counts dividing the training step count preserve dim structures 2&ndash;4&times; better.</li>
+              <li>Found and fixed a bug in a CUT/PatchNCE implementation that left the projection head untrained.</li>
             </ul>
           </div>
         </article>
@@ -108,7 +109,7 @@
           <div class="item text2">
             <papertitle>Deep Learning for Ultrasound Image Analysis with GPU Parallel Computing</papertitle>
             <br>
-            <span class="entry-org">Research Intern, Bio Optics and Acoustics Laboratory, POSTECH (Intensive Research Program)</span>
+            <span class="entry-org">Research Intern, Bio Optics and Acoustics Laboratory (Advisor: Prof. Chulhong Kim), POSTECH &middot; Intensive Research Program</span>
             <br>
             <em>Feb 2023</em>
             <ul class="entry-points">
