@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Seunghwan Lee, undergraduate student in Electrical Engineering at KAIST, working on computer vision, large language models, and physics-aware generative models for imaging.">
+  <meta name="author" content="Seunghwan Lee">
+  <link rel="canonical" href="https://lsh4867.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lsh4867.github.io/">
+  <meta property="og:title" content="Seunghwan Lee">
+  <meta property="og:description" content="Computer Vision · Large Language Models · Physics-Aware Generative Models">
+  <title>Seunghwan Lee</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+</head>
+
+<body>
+  <br>
+  <div class="container_onecolumn">
+    <header class="hero-profile">
+      <div class="profile-image">
+        <!-- Add profile-photo.jpg (square) to this folder; the initials show until then. -->
+        <img class="profile-photo" src="profile-photo.jpg" width="800" height="800" alt="Portrait of Seunghwan Lee"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span class="profile-initials" style="display:none">SL</span>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="profile-name">Seunghwan Lee</h1>
+        <p class="hero-role">Undergraduate Student in Electrical Engineering</p>
+        <p class="hero-affiliation">
+          <a href="https://www.kaist.ac.kr/en/" target="_blank" rel="noopener">KAIST</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://ee.kaist.ac.kr/en/" target="_blank" rel="noopener">School of Electrical Engineering</a>
+        </p>
+
+        <div class="research-tags" aria-label="Research areas">
+          <span>Computer Vision</span>
+          <span>Large Language Models</span>
+          <span>Physics-Aware Generative Models</span>
+        </div>
+
+        <div class="profile-links" aria-label="Profile links">
+          <a href="mailto:swan_608@kaist.ac.kr"><i class="fa fa-paper-plane" aria-hidden="true"></i>Email</a>
+          <a href="Seunghwan_Lee_CV.pdf" target="_blank" rel="noopener"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>CV</a>
+          <a href="https://github.com/lsh4867" target="_blank" rel="noopener"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a>
+          <!-- After creating the LinkedIn profile, replace the URL below and remove the comment markers.
+          <a href="https://www.linkedin.com/in/YOUR-ID/" target="_blank" rel="noopener"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+          -->
+        </div>
+      </div>
+    </header>
+
+    <div class="content_section">
+      <section class="section-block about-block" id="about">
+        <header class="section-header">
+          <heading>About</heading>
+        </header>
+        <div class="about-copy">
+          <p>
+            I am a third-year undergraduate student in Electrical Engineering at
+            <a href="https://www.kaist.ac.kr/en/" target="_blank" rel="noopener">KAIST</a>.
+            Since February 2026 I have been an undergraduate researcher at the KAIST Graduate School of Medical Science and Engineering,
+            where I develop physics-aware deep learning that restores in vivo two-photon microscopy to expansion-microscopy resolution.
+          </p>
+          <p>
+            I am interested in computer vision and large language models, and in particular in generative models whose outputs stay
+            faithful to the evidence they are given. In microscopy this means constraining a generator with the optical forward model
+            so that it restores structure without hallucinating it. I am now looking for opportunities to study these questions in
+            vision and language models more broadly.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-block news-block" id="news">
+        <header class="section-header">
+          <heading>News</heading>
+        </header>
+        <ul class="news-list">
+          <li><span class="news-date">2026-11</span><span>Started a team project on combat forecasting from PUBG match telemetry with Transformers and LLMs (AIC.30300, KAIST).</span></li>
+          <li><span class="news-date">2026-02</span><span>Joined the KAIST Graduate School of Medical Science and Engineering as an undergraduate researcher.</span></li>
+          <li><span class="news-date">2025-09</span><span>Served as a student volunteer at <strong>MICCAI 2025</strong> in Daejeon.</span></li>
+          <li><span class="news-date">2024-02</span><span>Started the B.S. program in Electrical Engineering at KAIST.</span></li>
+        </ul>
+      </section>
+
+      <section class="section-block" id="research">
+        <header class="section-header">
+          <heading>Research Experience</heading>
+        </header>
+
+        <article class="container2">
+          <div class="item text2">
+            <papertitle>Physics-Aware Unsupervised Super-Resolution for In Vivo Two-Photon Microscopy</papertitle>
+            <br>
+            <span class="entry-org">Undergraduate Researcher, Graduate School of Medical Science and Engineering, KAIST</span>
+            <br>
+            <em>Feb 2026 – Present</em>
+            <ul class="entry-points">
+              <li>Designed a 3D CycleGAN with OTF-based frequency-domain losses that enforce consistency with the optical forward model and suppress hallucinated structure.</li>
+              <li>Built PSF-measured sim2real data synthesis to train without paired in vivo and expansion-microscopy volumes.</li>
+              <li>Extending the framework to neuronal mitochondria for 3D instance segmentation and morphological quantification.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="container2">
+          <div class="item text2">
+            <papertitle>Deep Learning for Ultrasound Image Analysis with GPU Parallel Computing</papertitle>
+            <br>
+            <span class="entry-org">Research Intern, Bio Optics and Acoustics Laboratory, POSTECH (Intensive Research Program)</span>
+            <br>
+            <em>Feb 2023</em>
+            <ul class="entry-points">
+              <li>Implemented a U-Net to segment cell images along cell membranes, and studied GPU-accelerated implementation of ultrasound image analysis.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-block" id="projects">
+        <header class="section-header">
+          <heading>Projects</heading>
+        </header>
+
+        <article class="container2">
+          <div class="item text2">
+            <papertitle>Combat Forecasting from PUBG Match Telemetry</papertitle>
+            <br>
+            <span class="entry-org">Team project, AIC.30300 Introduction to Large Language Models, KAIST</span>
+            <br>
+            <em>Fall 2026</em> <span class="status-badge">In progress</span>
+            <ul class="entry-points">
+              <li>Using 999 matches from the official PUBG Telemetry API, predicted the attacker's direction 0&ndash;5 s before the first hit: test Top-1 accuracy 44.0% vs. 35.7% for a rule-based baseline.</li>
+              <li>Measuring when a frozen LLM's summary of the match state improves grid-level forecasts of future engagements.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-block" id="awards">
+        <header class="section-header">
+          <heading>Honors &amp; Awards</heading>
+        </header>
+        <ul class="news-list">
+          <li><span class="news-date">2022-12</span><span>Minister of Science and ICT Award, 2022 Global SW &amp; AI Education Challenge (high school division)</span></li>
+          <li><span class="news-date">2022-11</span><span>Minister of Science and ICT Award, 2022 Data Creator Camp</span></li>
+          <li><span class="news-date">2021-12</span><span>Prime Minister's Award, 67th Korea National Science Exhibition</span></li>
+        </ul>
+      </section>
+
+      <section class="section-block" id="education">
+        <header class="section-header">
+          <heading>Education</heading>
+        </header>
+        <ul class="news-list wide-date">
+          <li><span class="news-date">2024 – Present</span><span><strong>B.S. in Electrical Engineering</strong>, KAIST</span></li>
+          <li><span class="news-date">2021 – 2024</span><span>Chungbuk Science High School</span></li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>© 2026 Seunghwan Lee</p>
+        <p>
+          Template adapted from
+          <a href="https://koguma00.github.io/" target="_blank" rel="noopener">Junwon Ko</a>.
+        </p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
